@@ -38,6 +38,7 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+    border-radius: 12px;
 }
 
 img {
