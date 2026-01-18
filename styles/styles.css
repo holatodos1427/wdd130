@@ -20,6 +20,10 @@ main {
 main img {
     width: 150px;
     height: auto;
+    border: 2px double chocolate;
+    padding: 9px;
+    border-radius: 12px;
+    box-shadow: indianred;
 }
 
 aside {
