@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+:root {
+    /* Forest Green */
+    --primary-color: #055a05;
+    /* Warm sand */
+    --secondary-color: #f2a261;
+    /* Dark Slate Blue */
+    --accent1-color: #264653;
+    /* light golden yellow */
+    --accent2-color: #e9c46a;
+    /* Heading font */
+    --heading-font: "Funnel Display", sans-serif;
+    /* body font */
+    --body-font: Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+}
+
+header img {
+    width: 125px;
+    height: auto;
+}
+
+#link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 50px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+article {
+    position: absolute;
+    bottom: 10px;
+    width: 95%;
+    opacity: 0.8;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    border: 3px double var(--accent2-color);
+}
+
+section {
+    margin: 30px 0;
+    padding: 0;
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    background-color: var(--accent1-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    width: 100%;
+}
+
+section p {
+    padding: 20px;
+}
+
+footer {
+    border-top: 2px solid #264653;
+}
