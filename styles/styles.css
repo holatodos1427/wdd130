@@ -35,19 +35,23 @@ main img {
 }
 
 aside {
-    max-width: 680px;
-}
-
-aside h2 {
+    max-width: 20rem;
+    min-width: 15rem;
+    text-align: center;
     position: relative;
-    top: 47px;
-    left: 150px;
 }
 
 aside img {
     width: 200px;
     height: auto;
     border-radius: 12px;
+}
+
+aside h2 {
+    /* float: left; */
+    position: absolute;
+    top: 60px;
+    left: 130px;
 }
 
 img {
