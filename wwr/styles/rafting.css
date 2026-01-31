@@ -2,7 +2,7 @@
     /* Forest Green */
     --primary-color: #055a05;
     /* Warm sand */
-    --secondary-color: #f2a261;
+    --secondary-color: #c97a2f;
     /* Dark Slate Blue */
     --accent1-color: #264653;
     /* light golden yellow */
@@ -46,12 +46,16 @@ header img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #5d95ab;
+    background-color: var(--accent1-color);
     margin: 3px;
     padding: 12px;
     border-radius: 8px;
     width: 100%;
 
+}
+
+#link a {
+    color: #fff;
 }
 
 a {
