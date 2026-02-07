@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 header h1 {
@@ -19,21 +19,97 @@ header h1 {
 }
 
 main {
-    display: flex;
+    display: grid;
     justify-content: center;
+    margin-bottom: 1.4rem;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     background-color: #eeeeee;
     max-width: 650px;
-    border: 2px solid black;
+    border: 2px solid #e1e1e1;
     border-radius: 7px;
-    padding: 20px;
+    padding: 1rem;
+    min-width: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label {
+    justify-self: end;
+    padding-right: 1rem;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    justify-self: center;
+    margin: 1rem auto;
+    margin-bottom: 0;
+    background-color: navy;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1rem;
+    max-width: 125px;
+}
+
+button:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+
 }
 
 footer {
     display: flex;
     justify-content: center;
+}
+
+/* divs */
+.box-1,
+.box-2,
+.box-3,
+.box-5 {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.box-4 {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.box-4 label {
+    justify-self: start;
+    padding-right: 0;
 }

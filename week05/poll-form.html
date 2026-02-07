@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poll Form - David Cambeiro</title>
     <link rel="stylesheet" href="./styles/poll-form.css">
+
 </head>
 
 <body>
@@ -14,27 +15,45 @@
     </header>
     <main>
         <form>
-            <label for="">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Your Fullname" required>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="box-1">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your Fullname"
+                      required>
+                </div>
+                <div class="box-2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" placeholder="You Email"
+                      required>
+                </div>
 
-            <label for="">Email:</label>
-            <input type="email" id="useremail" name="useremail" placeholder="You Email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="box-3">
+                    <label for="browser">What is your favorite internet browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="1">Chrome</option>
+                        <option value="2">Safari</option>
+                        <option value="3">Brave</option>
+                    </select>
+                </div>
 
-            <label for="quantity">What is your favorite browser?</label>
-            <select name="browser" id="browser">
-                <option value="1">Chrome</option>
-                <option value="2">Safari</option>
-                <option value="3">Brave</option>
-            </select>
+                <div class="box-4">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
 
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" id="pet" name="pet">
-
-            <label for="feedback">List the places you have lived</label>
-            <input type="textarea" name="feedback" id="feedback" rows="4"
-              placeholder="Stillwater Florida, Amsterdam Netherland, Timbuktu Mali">
+                <div class="box-5">
+                    <label for="feedback">List the places you have lived: </label>
+                    <textarea name="feedback" id="feedback" rows="4"
+                      placeholder="Stillwater Florida, Amsterdam Netherland, Timbuktu Mali"></textarea>
+                </div>
+            </fieldset>
 
             <button type="submit">Submit Poll</button>
+
         </form>
     </main>
     <footer>
