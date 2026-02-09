@@ -147,16 +147,34 @@ section h2 {
     margin-bottom: 10px;
 }
 
+/* grid-trial */
 .grid-trial {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
 }
 
 .grid-trial img {
     width: 150px;
     height: auto;
-    align-self: center;
-    justify-content: space-around;
+}
+
+.grid-trial figcaption,
+.grid-trial2 figcaption {
+    text-align: center;
+}
+
+/* grid-trial2 */
+
+.grid-trial2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.grid-trial2 img {
+    width: 150px;
+    height: auto;
 }
 
 section p {
