@@ -310,6 +310,10 @@ footer p {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
+#map iframe {
+    border: 0;
+}
+
 #contact-form {
     display: flex;
     flex-direction: column;
