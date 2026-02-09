@@ -31,21 +31,54 @@
             <h4>+1 999 999 9999</h4>
             <h4>info@whitewater.com</h4>
         </div>
-        <div></div>
+        <div class="site-info">
+            <div id="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15907.895287226645!2d-77.86609420309034!3d-4.5987121548171785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91c98b15273cd6ab%3A0xe76a1abce3d02469!2sSanta%20Mar%C3%ADa%20de%20Nieva!5e0!3m2!1sen!2spe!4v1770618247648!5m2!1sen!2spe"
+                  width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form id="contact-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <label for="fullname">Name</label>
+                    <input type="text" id="fullname" placeholder="Full Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </fieldset>
+
+                <fieldset class="radio-group">
+                    <legend>Message Purpose</legend>
+                    <label><input type="radio" name="purpose"> General Inquiry</label>
+                    <label><input type="radio" name="purpose"> Reservation Question</label>
+                    <label><input type="radio" name="purpose"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="feedback">Message</label>
+                <textarea id="feedback" rows="4" placeholder="Type here"></textarea>
+
+                <label class="checkbox">
+                    <input type="checkbox"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Get in Touch!</button>
+        </div>
         <section>
             <h2>Adventure Awaits You!</h2>
             <div class="grid-trial2">
                 <figure>
-                    <img src="./images/1.webp" alt="Kyrgyzstan">
-                    <figcaption>Kyrgyzstan</figcaption>
+                    <img src="./images/first_employee.webp" alt="Kyrgyzstan">
+                    <figcaption>Ryan</figcaption>
                 </figure>
                 <figure>
-                    <img src="./images/general.webp" alt="Japan">
-                    <figcaption>Japan</figcaption>
+                    <img src="./images/second_employee.jpg" alt="Japan">
+                    <figcaption>Emma</figcaption>
                 </figure>
                 <figure>
-                    <img src="./images/3.webp" alt="Jordan">
-                    <figcaption>Jordan</figcaption>
+                    <img src="./images/third_employee.webp" alt="Jordan">
+                    <figcaption>Carlos</figcaption>
                 </figure>
             </div>
         </section>
